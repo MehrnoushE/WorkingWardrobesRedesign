@@ -1,0 +1,39 @@
+.navbar {
+  padding: .5rem 2rem;
+}
+.nav-item.dropdown{
+  padding-right: 30px;
+}
+
+.jumbotron.banner {
+  background: url('../images/banner.jpg') no-repeat fixed center;
+  height: 80vh;
+  display: flex;
+}
+
+.jumbotron-content {
+  max-width: 90vw;
+  color: #ffffff;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.btn-donate {
+  width: 150px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #dc4140;
+  border-color: #dc4140;
+}
+.btn-donate:hover {
+  color: #fff;
+  background-color: #d65353;
+  border-color: #d65353;
+}
+.btn-donate:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(123,0,0,.25);
+}
