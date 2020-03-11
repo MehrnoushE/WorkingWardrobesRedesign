@@ -130,3 +130,74 @@ body {
   background-size: cover;
   padding: 33px 30px 45px;
 }
+
+/* Sticky Footer Classes */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+  margin-top: 69px;
+}
+
+.btn-primary {
+  color: #DC4140;
+  background-color: transparent;
+  border-color: #DC4140;
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Other Classes for Page Styling */
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  transform: scale(.5);
+}
+
+h6 {
+  color: #46D5E1;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #F0EAE5;
+  background-clip: border-box;
+  border: none;
+}
+
+.card-body {
+  background-color: #F0EAE5;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  height: 300px;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 3.25rem;
+}
+
+body {
+  background: #F0EAE5;
+
+}
