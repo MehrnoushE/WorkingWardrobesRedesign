@@ -130,3 +130,13 @@ body {
   background-size: cover;
   padding: 33px 30px 45px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    background-color: #f8f9fa !important;
+    position: unset;
+  }
+  .navbar-nav .nav-link {
+    color: #000000 !important;
+  }
+}
