@@ -367,11 +367,11 @@ div.transbox p {
     padding: 15px 20px;
   }
   .colored-title {
-    font-size: 80px;
+    font-size: 60px;
   }  
 
   .fire-section {
-    padding: 100px 0 18px 150px;
+    padding: 100px 50px 100px;
     height: 55vh;
   }
   .fire-section h3{
@@ -408,10 +408,38 @@ div.transbox p {
     height: 70vh;
     background: url(../images/paycheck-story.jpg) no-repeat center;
     background-size: cover;
-    padding: 200px 100px 100px;
+    padding: 150px 100px 100px;
   }
   .btn-emailus {
     margin: 60px 0 0;
     padding: 18px 45px;
+  }
+  .social-icons .fab {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0 6px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .colored-title {
+    font-size: 80px;
+  }
+  .fire-section {
+    padding: 100px 0 18px 150px;
+  }
+  .paycheck-section {
+    padding: 200px 100px 100px;
+  }
+  .social-icons .fab {
+    font-size: 35px;
+    font-weight: 900;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 0 13px;
   }
 }
