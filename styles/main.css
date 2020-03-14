@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 .fw {
   width: 100%;
@@ -9,8 +10,18 @@ body {
 .bold {
   font-weight: 700;
 }
+.font-mont {
+  font-family: 'Montserrat', sans-serif;
+}
+.fs30 {
+  font-size: 30px;
+}
 .top-section {
   position: relative;
+}
+
+.mb60 {
+  margin-bottom: 60px;
 }
 
 /*Navigation Styles*/
@@ -32,10 +43,11 @@ body {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
-.navbar-nav {
+.navbar-nav, .dropdown-menu {
   padding-top: 10px;
+  background: rgba(0,0,0,0.5);
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-link, .dropdown-item {
   color: #fff !important;
   text-align: right;
 }
@@ -44,7 +56,6 @@ body {
 }
 /* Home Jumbotron styles */
 .jumbotron.banner {
-  font-family: 'Montserrat', sans-serif;
   background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7) ),url(../images/mobile-banner.jpg) no-repeat center;
   height: 80vh;
   display: flex;
@@ -66,6 +77,28 @@ body {
   font-weight: 700;
 }
 
+.colored-title {
+  letter-spacing: 2.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.who-serve {
+  padding: 0 35px;
+  margin-bottom: 2rem !important;
+}
+.who-serve p{
+  line-height: 38px;
+  margin-bottom: 0px;
+}
+.who-serve p a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;;
+  font-weight: bold;
+  color: #FE875D;
+}
 /* Donate Clothing Jumbotron styles */
 .DCjumbotron.banner {
   font-family: 'Montserrat', sans-serif;
@@ -107,43 +140,19 @@ div.transbox p {
 /* Donate Clothes Body styles */
 
 /* END Donate Clothes styles END */
-
-
-
-*.container-fluid img {
-  width: 100%;
-  }*/
-  .info p {
-    font-size: 20px;
-    word-wrap: break-word;
-    padding-left: 0%;
-    margin: 0%;
-  }
-  h1 {
-    font-size: 40px;
-    width: 100%;
-    padding-left: 0%;
-    padding-right: 10px;
-    margin: 0%;
-  }
-  .pic img {
-    display: flex;
-    justify-items: flex-end;
-    width: 300px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    margin-right: 10%;
-    margin-left: 5%;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
   
 
 .btn-donate {
   min-width: 150px;
   margin: 20px auto 0;
+  color: #fff;
+  background-color: #dc4140;
+  border-color: #dc4140;
+}
+.btn-emailus {
+  display: block;
+  margin: 85px auto 0;
+  padding: 10px 16px;
   color: #fff;
   background-color: #dc4140;
   border-color: #dc4140;
@@ -158,25 +167,30 @@ div.transbox p {
   box-shadow: 0 0 0 0.2rem rgba(123,0,0,.25);
 }
 .section-gutter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem !important;
 }
 .img-center {
   width: 40%;
   margin: 0 auto;
 }
-.img-center img {
+.img-center img, .clothes-img img, .people-img img {
   width: 100%;
 }
-.empowering-text {
+.people-img {
+  width: 60%;
+}
+.clothes-img {
+  width: 33%;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
 }
-.empowering-text span {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  
+.clothes-img  span {
+  font-size: 14px;
+  font-weight: 700;
 }
+
 .fire-section {
   color: #ffffff;
   height: 40vh;
@@ -188,11 +202,12 @@ div.transbox p {
 
 .btn.btn-light {
   width: 135px;
-  padding: 13px;
+  padding: 11px 13px;
   font-size: 15px;
   color: #000000;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
+  margin-top: 80px;
 }
 .orange-link {
   color: #FE875D;
@@ -205,28 +220,19 @@ div.transbox p {
   padding: 33px 30px 45px;
 }
 
-/* Sticky Footer Classes */
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 45px;
-  margin-top: 69px;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-primary {
+.back-to-top {
+  width: 170px;
   color: #DC4140;
   background-color: transparent;
   border-color: #DC4140;
-
-}
-
-html,
-body {
-  height: 100%;
+  border-width: 2px;
+  margin-top: 30px;
 }
 
 #page-content {
@@ -234,45 +240,51 @@ body {
 }
 
 #sticky-footer {
-  flex-shrink: none;
+  background-color: #343a40!important;
+  color: rgba(255,255,255,.5)!important;
+  padding: 1.5rem 0 !important;
 }
 
-/* Other Classes for Page Styling */
-
-img {
-  vertical-align: middle;
-  border-style: none;
-  transform: scale(.5);
+.social-icons {
+  flex-direction: row;
+  margin: 20px 0;
 }
-
-h6 {
-  color: #46D5E1;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #F0EAE5;
-  background-clip: border-box;
-  border: none;
-}
-
-.card-body {
-  background-color: #F0EAE5;
-  display: block;
+.social-icons .fab {
+  color: #37375d;
+  font-size: 35px;
+  font-weight: 900;
+  padding: 10px;
+  border: 3px solid #37375d;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 13px;
   text-align: center;
-  justify-content: center;
-  height: 300px;
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 3.25rem;
 }
 
-body {
-  background: #F0EAE5;
+.cyan-text {
+  color: #46D5E1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #F0EAE5;
+}
+.footer>div {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.f18b {
+  font-size: 18px;
+  font-weight: bold;
+}
+.f17sb {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -282,5 +294,8 @@ body {
   }
   .navbar-nav .nav-link {
     color: #000000 !important;
+  }
+  .jumbotron.banner {
+    background: url(../images/banner.png) no-repeat center;
   }
 }
