@@ -14,8 +14,21 @@ body {
 .font-mont {
   font-family: 'Montserrat', sans-serif;
 }
+.black-link {
+  color: #000000;
+  text-decoration: underline;
+}
 .fs30 {
   font-size: 30px;
+}
+.fs35 {
+  font-size: 35px;
+}
+.fs41 {
+  font-size: 41px;
+}
+.fs48 {
+  font-size: 48px;
 }
 .top-section {
   position: relative;
@@ -32,9 +45,7 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-.mb60 {
-  margin-bottom: 60px;
-}
+
 
 /*Navigation Styles*/
 .navbar {
@@ -205,7 +216,7 @@ div.transbox p {
 
 .fire-section {
   color: #ffffff;
-  height: 40vh;
+  height: 270px;
   background: url(../images/fire.jpg) no-repeat center;
   background-size: cover;
   padding: 32px 77px 18px 43px;
@@ -220,12 +231,15 @@ div.transbox p {
   border-color: #FFFFFF;
   margin-top: 80px;
 }
+.orange-text {
+  color: #DC4140;
+}
 .orange-link {
   color: #FE875D;
 }
 .paycheck-section{
   color: #ffffff;
-  height: 40vh;
+  height: 270px;
   background: url(../images/mobile-paycheck-story.jpg) no-repeat center;
   background-size: cover;
   padding: 33px 30px 45px;
@@ -292,11 +306,18 @@ div.transbox p {
 
 
 @media only screen and (min-width: 768px) {
+  .mb40 {
+    margin-bottom: 40px !important;
+  }
+  .mb60 {
+    margin-bottom: 60px !important;
+  }
+  .mb100 {
+    margin-bottom: 100px !important;
+  }
   .navbar {
     background-color: #f8f9fa !important;
     position: unset;
-  }
-  .navbar-nav {
   }
   .navbar-nav, .navbar-nav .nav-link, .dropdown-item {
     background: transparent;
@@ -307,7 +328,9 @@ div.transbox p {
     padding-top: 10px;
     background: #fff;
   }
-  
+  .mw150 {
+    max-width: 150px;
+  }
   .jumbotron.banner {
     background: url(../images/banner.png) no-repeat center;
   }
@@ -317,10 +340,12 @@ div.transbox p {
   }
   .btn-donate {
     margin: 20px 0 0;
-    max-width: 150px;
   }
-  .section-gutter {
+  .display-block {
     display: block;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .img-center {
     width: 25%;
@@ -342,7 +367,7 @@ div.transbox p {
     padding: 15px 20px;
   }
   .colored-title {
-    font-size: 60px;
+    font-size: 80px;
   }  
 
   .fire-section {
@@ -357,7 +382,9 @@ div.transbox p {
     display: block;
     font-size: 30px;
   }
-  
+  .people-img {
+    width: 82%;
+  }
   .btn.btn-light {
     width: 230px;
     padding: 14px 32px;
@@ -365,8 +392,14 @@ div.transbox p {
     margin-top: 120px;
   }
   .serve-text {
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 31px;
+  }
+  .serve-text p {
+    line-height: 55px;
+  }
+  .who-serve p a{
+    font-size: 30px;
+    line-height: 55px;
   }
   .paycheck-section h2 {
     font-size: 4rem;
