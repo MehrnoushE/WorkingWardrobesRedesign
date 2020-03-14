@@ -7,6 +7,7 @@ body {
 .fw {
   width: 100%;
 }
+
 .bold {
   font-weight: 700;
 }
@@ -19,7 +20,18 @@ body {
 .top-section {
   position: relative;
 }
-
+.f18b {
+  font-size: 18px;
+  font-weight: bold;
+}
+.f26sb {
+  font-size: 26px;
+  font-weight: 600;
+}
+.f17sb {
+  font-size: 18px;
+  font-weight: 600;
+}
 .mb60 {
   margin-bottom: 60px;
 }
@@ -199,7 +211,6 @@ div.transbox p {
   padding: 32px 77px 18px 43px;
 }
 
-
 .btn.btn-light {
   width: 135px;
   padding: 11px 13px;
@@ -278,24 +289,96 @@ div.transbox p {
   align-items: center;
   flex-direction: column;
 }
-.f18b {
-  font-size: 18px;
-  font-weight: bold;
-}
-.f17sb {
-  font-size: 18px;
-  font-weight: 600;
-}
 
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 768px) {
   .navbar {
     background-color: #f8f9fa !important;
     position: unset;
   }
-  .navbar-nav .nav-link {
-    color: #000000 !important;
+  .navbar-nav {
   }
+  .navbar-nav, .navbar-nav .nav-link, .dropdown-item {
+    background: transparent;
+    color: #000000 !important;
+    text-align: left;
+  }
+  .dropdown-menu {
+    padding-top: 10px;
+    background: #fff;
+  }
+  
   .jumbotron.banner {
     background: url(../images/banner.png) no-repeat center;
+  }
+  .jumbotron-content span {
+    font-size: 3.5rem;
+    display: flex;
+  }
+  .btn-donate {
+    margin: 20px 0 0;
+    max-width: 150px;
+  }
+  .section-gutter {
+    display: block;
+  }
+  .img-center {
+    width: 25%;
+    margin: 0px;
+  }
+  .mauto {
+    margin: auto;
+  }
+  .clothes-img {
+    width: 60%;
+    margin: auto;
+  }
+  .btn-donate-clothes {
+    min-width: 150px;
+    margin: 40px 0 0;
+    color: #fff;
+    background-color: #dc4140;
+    border-color: #dc4140;
+    padding: 15px 20px;
+  }
+  .colored-title {
+    font-size: 60px;
+  }  
+
+  .fire-section {
+    padding: 100px 0 18px 150px;
+    height: 55vh;
+  }
+  .fire-section h3{
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .fire-section span{
+    display: block;
+    font-size: 30px;
+  }
+  
+  .btn.btn-light {
+    width: 230px;
+    padding: 14px 32px;
+    font-size: 23px;
+    margin-top: 120px;
+  }
+  .serve-text {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .paycheck-section h2 {
+    font-size: 4rem;
+  }
+  .paycheck-section {
+    height: 70vh;
+    background: url(../images/paycheck-story.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px 100px 100px;
+  }
+  .btn-emailus {
+    margin: 60px 0 0;
+    padding: 18px 45px;
   }
 }

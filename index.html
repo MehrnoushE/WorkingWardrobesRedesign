@@ -72,11 +72,6 @@
               aria-haspopup="true" aria-expanded="false">
               Donations 
             </a>
-            <!-- <div class="dropdown-menu" aria-labelledby="donations">
-              <a class="dropdown-item" href="#">Donate Clothing</a>
-              <a class="dropdown-item" href="#">Time</a>
-              <a class="dropdown-item" href="#">Money</a>
-            </div> -->
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="shop" role="button" data-toggle="dropdown"
@@ -118,7 +113,7 @@
   </div>
   <div class="container-fluid fire-section mb60">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-6">
         <h3>HELP US REBUILD!</h3>
         <span>Fire Destroys Working Wardrobes Headquarters in Irvine</span>
         <button type="button" class="btn btn-light">Learn More</button>
@@ -132,19 +127,29 @@
           <span class="text-danger">People</span>
           <span> First</span>
         </h2>
-        <p>Everyone Deserves to Make a Living.</p>
-        <p>Hear from some of our clients.</p>
+        <div class="d-sm-block d-md-none">
+          <p>Everyone Deserves to Make a Living.</p>
+          <p>Hear from some of our clients.</p>
+        </div>
       </div>
     </div>
     <div class="row mb60">
-      <div class="col-sm-12 section-gutter">
+      <div class="col-sm-12 col-md-4 section-gutter">
         <div class="people-img">
           <img src="images/man-1.jpg" alt="">
+          <p class="d-none d-md-block">frth</p>
         </div>
       </div>
-      <div class="col-sm-12 section-gutter">
+      <div class="col-sm-12 col-md-4 section-gutter">
         <div class="people-img">
           <img src="images/woman.jpg" alt="">
+          <p class="d-none d-md-block">frth</p>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-4 section-gutter">
+        <div class="people-img">
+          <img src="images/man-2.jpg" alt="">
+          <p class="d-none d-md-block">frth</p>
         </div>
       </div>
     </div>
@@ -154,19 +159,24 @@
           <span>What’s </span>
           <span class="text-danger">New</span>
         </h2>
-        <p>Easy. Clothing. Donations.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 section-gutter">
-        <div class="clothes-img">
-          <img src="images/clothes.png" alt="Clothes">
-          <span>Clothes</span>
-        </div>
+        <p class="d-sm-block d-md-none">Easy. Clothing. Donations.</p>
+        <p class="d-none d-md-block f26sb">Check out our new feature</p>
       </div>
     </div>
     <div class="row mb60">
-      <div class="col-sm-12 section-gutter">
+      <div class="d-none d-md-block col-md-8 section-gutter">
+        <div class="">
+          <img class="fw" src="images/box-clothes.png" alt="Clothes">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 section-gutter">
+        <div class="clothes-img ">
+          <img class="" src="images/clothes.png" alt="Clothes">
+          <span class="d-sm-block d-md-none">Clothes</span>
+          <a class="btn btn-donate-clothes btn-lg d-none d-md-block" href="donations.html" role="button">Donate Clothes</a>
+        </div>
+      </div>
+      <div class="d-sm-block d-md-none col-sm-12 section-gutter">
         <a class="btn btn-donate btn-lg" style="font-size: 18px; padding: 8px 15px;" href="donations.html" role="button">Donate Clothes</a>
       </div>
     </div>
@@ -195,20 +205,29 @@
           <span>Who We </span>
           <span class="text-danger">Serve</span>
         </h2>
-        <p>We strive to help underserved populations in our community. 
-          Learn more about the services we provide and who it helps.</p>
-        <p>&nbsp;</p>
-        <p><a class="orange-link" href="#">Veterans</a></p>
-        <p><a class="orange-link" href="#">Reentry</a></p>
-        <p><a class="orange-link" href="#">Seniors</a></p>
-        <p><a class="orange-link" href="#">Under-employed</a></p>
-        <p><a class="orange-link" href="#">Young Adults</a></p>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 serve-text">
+            <p>We strive to help underserved populations in our community. 
+              Learn more about the services we provide and who it helps.</p>
+            <p>&nbsp;</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p><a class="orange-link" href="#">Veterans</a></p>
+            <p><a class="orange-link" href="#">Reentry</a></p>
+            <p><a class="orange-link" href="#">Seniors</a></p>
+            <p><a class="orange-link" href="#">Under-employed</a></p>
+            <p><a class="orange-link" href="#">Young Adults</a></p>
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <img class="fw" src="images/donate-card.jpg" alt="Clothes">
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="container-fluid paycheck-section">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-5">
         <h2>What is YOUR first paycheck story?</h2>
         <button type="button" class="btn btn-emailus">Email Us</button>
       </div>
