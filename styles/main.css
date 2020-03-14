@@ -367,7 +367,7 @@ div.transbox p {
     padding: 15px 20px;
   }
   .colored-title {
-    font-size: 80px;
+    font-size: 60px;
   }  
 
   .fire-section {
@@ -425,6 +425,9 @@ div.transbox p {
 }
 
 @media only screen and (min-width: 992px) {
+  .colored-title {
+    font-size: 80px;
+  }
   .fire-section {
     padding: 100px 0 18px 150px;
   }
